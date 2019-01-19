@@ -1,6 +1,6 @@
 FROM docker:latest
 
-RUN apk add --no-cache py-pip
+RUN apk add --no-cache py-pip curl
 RUN pip install docker-compose
 
 RUN curl https://sh.rustup.rs > rustup.sh
