@@ -7,7 +7,7 @@ RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debia
 RUN apt-get update
 RUN apt-get install docker-ce -y
 
-RUN pip install docker-compose
+RUN pip3 install docker-compose
 
 RUN cargo install cargo-make
 
