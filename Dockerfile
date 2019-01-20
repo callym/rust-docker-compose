@@ -12,6 +12,6 @@ RUN pip3 install docker-compose
 RUN cargo install cargo-make
 
 COPY dockerd-entrypoint.sh /usr/local/bin/
-ENTRYPOINT ["dockerd-entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/dockerd-entrypoint.sh"]
 
 CMD ["/bin/bash"]
