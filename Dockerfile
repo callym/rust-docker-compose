@@ -11,6 +11,6 @@ RUN apt-get install docker-ce -y
 
 RUN pip3 install docker-compose
 
-RUN cargo install cargo-make
+RUN cargo install cargo-make --force
 
 CMD ["/bin/bash"]
