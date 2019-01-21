@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
 
-exec "dockerd"
+exec "dockerd -s overlay2"
