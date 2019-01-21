@@ -11,7 +11,6 @@ RUN apt-get install docker-ce -y
 RUN pip3 install docker-compose
 
 # https://askubuntu.com/questions/870889/cant-start-docker-on-ubuntu-16-04-with-driver-not-supported-error/870890
-RUN apt-get install linux-image-extra-virtual -y
 RUN modprobe aufs
 RUN mkdir -p /etc/docker
 RUN echo '{ "storage-driver": "aufs" }' > /etc/docker/daemon.json
